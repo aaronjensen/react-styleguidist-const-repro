@@ -1,0 +1,30 @@
+[version]
+>=0.33.0
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=client
+module.use_strict=true
+suppress_comment=\\(.\\|\n\\)*\\$FlowIgnore
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
+esproposal.export_star_as=enable
+module.name_mapper='^assets\/icons\/.*\.svg$' -> '<PROJECT_ROOT>/client/types/ComponentStub.js'
+module.name_mapper='^copy\/.*\.md$' -> '<PROJECT_ROOT>/client/types/StringStub.js'
+emoji=true
+
+[libs]
+./client/types/global
+
+[ignore]
+.*/.yarn-cache/.*
+.*/node_modules/fbjs/.*
+<PROJECT_ROOT>/node_modules/systemjs-builder/.*
+<PROJECT_ROOT>/node_modules/reactcss/node_modules/fbjs/.*
+<PROJECT_ROOT>/node_modules/react-color/.*
+<PROJECT_ROOT>/node_modules/radium/.*
+<PROJECT_ROOT>/node_modules/findup/.*
+<PROJECT_ROOT>/node_modules/jss/.*
+<PROJECT_ROOT>/node_modules/babel-plugin-flow-react-proptypes/.*
+<PROJECT_ROOT>/.mergeq/.*
+<PROJECT_ROOT>/deps/.*
+<PROJECT_ROOT>/tmp/.*

@@ -1,0 +1,56 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        "react",
+        ["latest", { "modules": false }],
+        "stage-2"
+      ],
+      "plugins": [
+        "lodash",
+        "transform-export-extensions"
+      ]
+    },
+    "development": {
+      "presets": [
+        "react",
+        ["latest", { "modules": false }],
+        "react-hmre",
+        "stage-2"
+      ],
+      "plugins": [
+        "flow-react-proptypes",
+        "lodash",
+        "transform-export-extensions",
+        "transform-react-jsx-source",
+        "transform-react-jsx-self"
+      ]
+    },
+    "acceptance": {
+      "presets": [
+        "react",
+        ["latest", { "modules": false }],
+        "stage-2"
+      ],
+      "plugins": [
+        "lodash",
+        "transform-export-extensions"
+      ]
+    },
+    "test": {
+      "presets": [
+        "react",
+        "latest",
+        "stage-2"
+      ],
+      "plugins": [
+        "flow-react-proptypes",
+        "lodash",
+        "transform-export-extensions",
+        "transform-react-jsx-source",
+        "transform-react-jsx-self",
+        ["system-import-transformer", { "modules": "common" }]
+      ]
+    }
+  }
+}

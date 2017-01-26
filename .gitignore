@@ -1,0 +1,21 @@
+# App artifacts
+/_build
+/db
+/deps
+/*.ez
+
+# Generated on crash by the VM
+erl_crash.dump
+
+/.envrc.secret
+
+/node_modules
+/.yarn-cache
+*.log*
+screenshots/*.png
+
+/.local.*.plt
+/tmp
+
+# Generate robots.txt as part of asset compilation
+/priv/static/robots.txt
